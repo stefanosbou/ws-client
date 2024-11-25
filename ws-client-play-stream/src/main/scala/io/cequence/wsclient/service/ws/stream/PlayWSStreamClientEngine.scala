@@ -1,11 +1,11 @@
 package io.cequence.wsclient.service.ws.stream
 
-import akka.NotUsed
-import akka.http.scaladsl.unmarshalling.{Unmarshal, Unmarshaller}
-import akka.stream.Materializer
-import akka.stream.scaladsl.Framing.FramingException
-import akka.stream.scaladsl.{Flow, Framing, Source}
-import akka.util.ByteString
+import org.apache.pekko.NotUsed
+import org.apache.pekko.http.scaladsl.unmarshalling.{Unmarshal, Unmarshaller}
+import org.apache.pekko.stream.Materializer
+import org.apache.pekko.stream.scaladsl.Framing.FramingException
+import org.apache.pekko.stream.scaladsl.{Flow, Framing, Source}
+import org.apache.pekko.util.ByteString
 import com.fasterxml.jackson.core.JsonParseException
 import io.cequence.wsclient.domain.{
   CequenceWSException,
