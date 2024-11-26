@@ -10,17 +10,9 @@ The currently supported Scala versions are **2.13**, and **3**.
 To install the library, add the following dependency to your *build.sbt*
 
 ```
-"io.cequence" %% "ws-client-play"" % "0.6.2-pekko"
-```
+ThisBuild / resolvers += "GitHub Packages" at "https://maven.pkg.github.com/stefanosbou/ws-client"
 
-or to *pom.xml* (if you use maven)
-
-```
-<dependency>
-    <groupId>io.cequence</groupId>
-    <artifactId>ws-client-play_2.12</artifactId>
-    <version>0.6.2</version>
-</dependency>
+"io.cequence" %% "ws-client-play"" % "0.6.2_pekko"
 ```
 
 ## License ⚖️
